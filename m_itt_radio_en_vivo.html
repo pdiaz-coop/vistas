@@ -1,0 +1,408 @@
+
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Radio en Vivo - Cooperativa.cl</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Pragma" content="no-cache">
+        <link type="text/css" rel="stylesheet" href="/cooperativa/js-local/jquery-ui/jquery-ui.css">
+        <link type="text/css" rel="stylesheet" href="/cooperativa/css/articulo.css">
+        <link type="text/css" rel="stylesheet" href="/cooperativa/css/movil/player.css?1">
+        <link type="text/css" rel="stylesheet" href="/cooperativa/css/movil/movil.css">
+        <link rel="stylesheet" type="text/css" href="/cooperativa/js-local/jquery/plugins/mmenu/jquery.mmenu.all.css">
+
+        <link type="text/css" rel="stylesheet" href="/cooperativa/css/ads.css">
+        <link type="text/css" rel="stylesheet" href="/cooperativa/css/controls.css">
+
+        <script src="/cooperativa/js-local/jquery/jquery.js"></script>
+        <script src="/cooperativa/js-local/validator_custom_msg.js"></script>
+        <script src="/cooperativa/js-local/html5.js"></script>
+        <script src="/cooperativa/js-local/jquery/plugins/mmenu/jquery.mmenu.min.js"></script>
+        <script src="/cooperativa/js-local/jquery-ui/jquery-ui.js"></script>
+        <!-- <script src="/cooperativa/js-local/Utiles.class.js"></script> -->
+        <!-- script defer src="https://www.provokers.cl/encuesta/4T2C_STERAMING_M.js"></scripti -->
+
+        <!-- ProntusPlayer -->
+        <script src="//s0.2mdn.net/instream/html5/ima3.js"></script>
+        <!-- /ProntusPlayer -->
+
+        <!--script src="/cooperativa/js-local/mainRadio-movil.js"></script-->
+        <script src="/cooperativa/js-local/audiojs/audio.min.js"></script>
+        <script src="/cooperativa/js-local/AudioManager.js"></script>
+
+
+        <meta name="Generator" content="Prontus 11.2" />
+
+        <script type='text/javascript'>
+          (function() {
+            var useSSL = 'https:' == document.location.protocol;
+            var src = (useSSL ? 'https:' : 'http:') +
+                '//www.googletagservices.com/tag/js/gpt.js';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+          })();
+        </script>
+
+        <script type='text/javascript'>
+          googletag.cmd.push(function() {
+            googletag.defineSlot('/1020719/coop_m_320x80_01', [[300, 50], [300, 100], [320, 80], [300, 80], [320, 50]], 'div-gpt-ad-1462306628632-0').addService(googletag.pubads());
+            var itt = googletag.defineSlot('/1020719/coop_m_1x1', [1, 1], 'coop_m_1x1_1').addService(googletag.pubads()).setTargeting('coop_tipo', 'coop_radio_en_vivo');
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().enableSyncRendering();
+            googletag.enableServices();
+          });
+        </script>
+
+    </head>
+    <body class="bodysite">
+        <!-- GOOGLE TAG MANAGER RADIO CARTA-->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MKM2XH"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MKM2XH');</script>
+        <!-- / GOOGLE TAG MANAGER RADIO CARTA  -->
+
+        <div id="gam_ad_unit_m_itt" style="margin: 0 auto; display: table;">
+            <div id='coop_m_1x1_1' class="gam-bloque-itt">
+                <script>
+                  googletag.cmd.push(function() { googletag.display('coop_m_1x1_1'); });
+                </script>
+            </div> 
+        </div>
+        <div id="page">
+            <header id="header">
+                <h1 id="title"><a href="/cooperativa/stat/portada/portada_movil.html"><img src="/cooperativa/imag/master/cooperativa_radio_logo.svg" title="Radio Cooperativa" alt="Radio Cooperativa" id="logo" width="170" height="66"/></a></h1>
+
+                <!-- <div class="aright">
+                    <a href="#menu" class="icoMenu"></a>
+                </div> -->
+                <div class="separa"></div>
+            </header>
+
+            <div id="main">
+                <div id="contMovil">
+                    <div id="bannerContainer">
+
+                    </div>
+
+                    <!-- /1020719/Coop_M_Radio_online_x35 -->
+                    <div class="banner" id='div-gpt-ad-1462306628632-0'>
+                    <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462306628632-0'); });
+                    </script>
+                    </div>
+
+                    <aside id="player" class="Col1 aleft">
+                        <!-- PLAYER -->
+<div class="boxPlayer">
+    <!-- Titulo -->
+    <div class="titlePlayer">
+        <h1>Escucha Radio Cooperativa</h1>
+    </div>
+    <div class="auxiPlayer">
+        <!-- Cover -->
+        <div class="coverPlayer">
+            <div id="JHSPlayer">
+                <audio id="stream" ></audio>
+            </div>
+            <h3 id="currBand" class="band" style="display: none"></h3>
+            <h4 id="currSong" class="song" style="display: none"></h4>
+             <!-- modifique a mano para forzar la hora modificar para que tenga su propia clase  -->
+            <h2 id="currProgram" class="program" style="display: none;"></h2>
+            <h3 id="curTime" class="curtime" ></h3>
+            <img id="currImg" src="/cooperativa/imag/img_default/default_300x250.jpg" class="cover" width="300" height="250">
+            <div id="ads" class="ads" >
+                <video id="adsPlayer" class="adsPlayer" playsinline></video>
+                <div id="adContainer"></div>
+                <div id="adInfoContent" class="adInfoContent"><p id="adInfo" class="adInfo"></p></div>
+                <div id="adSkipContainer" class="adSkip">
+                    <p id="adSkipInfo" class="adSkipInfo" align="right"></p>
+                </div>
+            </div>
+        </div>
+        <div class="progressbarPlayer">
+            <div id="janusProgramBar"></div>
+            <div class="tooltipPlayer" >12:59:59</div>
+        </div>
+        <!-- Controles -->
+        <div class="controlsPlayer">
+            <a id="janusShare" class="janusButton sharePlayer buttonPlayer" data-description="Compartir momento"></a>
+            <a id="janusPrev" class="janusButton prevPlayer buttonPlayer" data-description="Canción anterior"></a>
+            <a id="janusPlay" class="janusButton playPlayer buttonPlayer" data-description="Reproducir"></a>
+            <a id="janusLoader" class="janusButton loaderPlayer buttonPlayer" style="display:none" data-description="Cargando"></a>
+            <a id="janusPause" class="janusButton pausePlayer buttonPlayer" style="display:none" data-description="Pause"></a>
+            <a id="janusNext" class="janusButton nextPlayer buttonPlayer" data-description="Siguiente canción"></a>
+            <a id="janusVolMute" class="janusButton volumePlayer buttonPlayer" data-description="Silenciar" ></a>
+            <a id="janusVolUnmute" class="janusButton mutePlayer buttonPlayer" style="display: none"></a>
+            <div id="janusVol" class="volumesliderPlayer"></div>
+            <div class="msgContainer">
+                <a id="janusEnd" style="display:none">Escuchar en vivo</a>
+                <p id="janusHelp" style="display:none"></p>
+            </div>
+        </div>
+        <div class="shareRow">
+            <input type="text" name="Compartir Url" placeholder="Compartir Url" class="inputShare">
+            <span class="fbShare" id="janusFBShare"></span>
+            <span class="twShare" id="janusTWShare"></span>
+            <span class="gpShare" id="janusGPShare"></span>
+            <span class="copyShare"></span>
+            <span class="closeShare"></span>
+        </div>
+    </div>
+    <!-- Tabs -->
+    <div id="tabs" class="tabsPlayer">
+        <!-- Playlist -->
+        <div id="tabs-1" class="Playlist">
+            <div id="tabs2" class="tabsPlaylist">
+                <ul>
+                    <li class="tabPlaylist" style="width: 100%;"><a href="#module-songs" class="subtab cancPlaylist">Programación</a></li>
+                </ul>
+                <!-- Módulo: Ultimas canciones -->
+                <div class="module" id="module-programing">
+    <!-- Row 1 -->
+    <header class="header">
+      <div class="row">
+        <div class="col-md-3"><span class="ico arrow left"></span><a href="" id="getPrevPrograms" class="getProgram"></a></div>
+        <div class="col-md-6"><h1 class="title" id="titleProgDay"></h1></div>
+        <div class="col-md-3"><a href="" id="getNextsPrograms" class="getProgram"></a><span class="ico arrow right"></span></div>
+      </div>
+    </header>
+    <!-- FIN Row 1 -->
+    <!-- Row 2 -->
+    <section class="row-common row2 template_list programmes">
+        <div class="content">
+            <div id="programingList" class="resize">
+                <ul id="programingListUl"> 
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- FIN Row 2 -->
+</div>
+                <!-- FIN Módulo: Ultimas canciones -->
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="coopinfo">
+<span class="coopmsg">También puede escuchar nuestra transmisión usando el reproductor de su preferencia haciendo click aquí: <a href="http://www.cooperativa.cl/noticias/prontus/player_streaming/chile.m3u"><img src="/cooperativa/imag/iconos/cl.png" /></a> / <a href="http://www.cooperativa.cl/noticias/prontus/player_streaming/usa.m3u"><img src="/cooperativa/imag/iconos/us.png" /></a></span>
+</div>
+<div class="separa"></div>
+<!-- FIN PLAYER -->
+
+                    </aside>
+                </div>
+                <span class="separa"></span>
+            </div>
+
+        </div>
+        
+
+    <script src="/cooperativa/js-local/janus/lang/es.js"></script>
+    <script src="/cooperativa/js-local/md5.js"></script>
+    <script src="/cooperativa/js-local/jquery/jquery.xdomainrequest.min.js"></script>
+    <script src="/cooperativa/js-local/jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="/cooperativa/js-local/moment.js"></script>
+    <script src="/cooperativa/js-local/es.js"></script>
+    <script type="text/javascript" src="/cooperativa/js-local/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/cooperativa/js-local/bootstrap-datetimepicker.min.js"></script>
+
+    <script src='/cooperativa/js-local/janus/janusConfig.js?v11'></script>
+
+    <script src='/cooperativa/js-local/janus/janus.min.js?v11'></script>
+
+    <script>
+        $(document).ready(function () {
+            janus.install();
+            function autoplay(){
+                if(janus.player.vars.curPlayer == "flash"){
+                    console.log("1");
+                    var status = janus.player.flash.vars.isReady;
+                    if(status) {
+                        $('#janusPlay').click();
+                    } else {
+                    setTimeout(autoplay,1000);
+                    }
+                }
+            }
+            if(janusConfig.player.autoplay){
+                setTimeout(autoplay,1000);
+            }
+            $( "#datepicker1" ).datetimepicker({
+                pickTime: true,
+                sideBySide: true,
+                changeMonth: true,
+                maxDate: new Date()
+            });
+            $('#datepicker1').data("DateTimePicker").setDate(new Date());
+            $("#searchByEpoch").on('click',function(event){
+                event.preventDefault();
+                janus.player.seekEpoch(janus.helper.dateToOriginalEpoch($('#datepicker1').data("DateTimePicker").getDate()._d));
+            });
+        });
+    </script>
+
+    <script id="janusComment" type="text/template">
+        <li __attr__>
+            <a href="#__epoch_stream__" class="playByEpoch vrow">
+            <article class="article">
+                <div class="info aleft">
+                    <div class="cuerpo">
+                        <div class="user">
+                            <div class="image profile">
+                                <img src="__avatar__" alt="__usuario__" title="__usuario__" width="17" height="17">
+                            </div>
+                            <span class="title">__usuario__</span>
+                        </div>
+                        <p>__comentario__</p>
+                    </div>
+                </div>
+                <span class="separa"></span>
+            </article>
+            </a>
+        </li>
+    </script>
+    <script id="janus_thumb" type="text/template">
+        <article class="thumbnailItem __txt__">
+            <div class="image">
+                <a href="#__epoch__"  class="setEpoch"><img src="__ThumbUrl__" width="110" height="70" ></a>
+            </div>
+            <span class="ico option"><a href="#__epoch__" class="setEpoch"></a></span>
+            <span class="shadow"></span>
+        </article>
+    </script>
+    <script id="janusEpg" type="text/template">
+        <li id="program___id__">
+            <article class="article article-program resultado">
+                <div class="content">
+                    <div class="image screenshot animate-fast pull-left">
+                        <a href="#__lastEpisode__">
+                            <img width="311" height="199" src="__foto_large__" alt="__dia_inicio__-__hora_inicio__" title="__dia_inicio__-__hora_inicio__">
+                        </a>
+                    </div>
+                    <div class="info pull-right">
+                        <div class="user">
+                            <span class="title" title="__title__">__title____live__</span>
+                            <span class="date">__dia_inicio__  __fecha_inicio__-__fecha_fin__</span>
+                        </div>
+                        <div class="cuerpo animate-fast"><p>__resena__</p></div>
+                    </div>
+                    <div class="playcol">
+                        <a class="playByEpoch" href="#__epoch_inicio__">
+                            <span class="playicon"></span>
+                            <p>Escucha</p>
+                        </a>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+                <span class="separa"></span>
+            </article>
+        </li>
+    </script>
+    <script id="janus_favorite" type="text/template">
+        <li id="fav___id__">
+            <div class="screenshot">
+                <a class="playByEpoch" href="#__epoch__">
+                    <img src="__img__" alt="album" title="album" width="58" height="58" class="cover-sm">
+                </a>
+            </div>
+            <div class="songcol">
+                <h2 class="songtitle">__title__</h2>
+                <p class="artist">__date__</p>
+            </div>
+            <div class="playcol">
+                <a class="playByEpoch" href="#__epoch__">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+            <span class="delete animate-fast"><a class="deleteFav" href="#__id__">Delete <span class="ico ico-delete"></span></a></span>
+        </li>
+    </script>
+    <script id="janusMark" type="text/template">
+
+
+        <li id="mark___id__">
+            <div class="screenshot">
+                <a class="playByEpoch" href="#__epoch_stream__">
+                    <img src="/cooperativa/imag/img_default/default_300x250.jpg" alt="album" title="album" width="58" height="58" class="cover-sm">
+                </a>
+            </div>
+            <div class="songcol">
+                <h2 class="songtitle">__titulo__</h2>
+                <p class="artist">__hora_inicio__</p>
+            </div>
+            <div class="description">
+                <p >__descripcion__</p>
+            </div>
+           
+            <div class="playcol">
+                <a class="playByEpoch" href="#__epoch_stream__">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+        </li>
+    </script>
+    <script id="janusProgramSearch" type="text/template">
+        <li id="programSearch___id__">
+            <div class="imageSearch">
+                <a href="#__lastEpisode__"  class="playByEpoch vrow setEpoch"><img src="__img__" width="58" height="58" ></a>
+            </div>
+            <div class="songcol">
+                <h1 class="songtitle">__title__</h1>
+                <span class="hour">__hora_inicio__</span>
+                <h2 class="artist">__resena__</h2>
+            </div>
+            <div class="playcol">
+                <a href="#__lastEpisode__" class="playByEpoch vrow">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+        </li>
+    </script>
+    <script id="janusSongSearch" type="text/template">
+        <li id="songSearch___id__" class="song __class__">
+            <div class="imageSearch">
+                <a href="#__startEpoch__"  class="playByEpoch vrow setEpoch"><img src="__img__" width="58" height="58" ></a>
+            </div>
+            <div class="songcol">
+                <h1 class="songtitle">__titleName__</h1>
+                <span class="hour">__hora_inicio__</span>
+                <h2 class="artist">__artistName__</h2>
+            </div>
+            <div class="playcol">
+                <a href="#__startEpoch__" class="playByEpoch vrow">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+        </li>
+    </script>
+    <script id="janusSong" type="text/template">
+        <li id="song___id__" class="song __class__">
+            <div>
+                <a class="playByEpoch" href="#__startEpoch__">
+                    <img src="__img__" alt="album" title="album" width="58" height="58" class="cover-sm">
+                </a>
+                <div class = "cancion-info">
+                    <p class="artist">__artistName__</p>
+                    <h2 class="songtitle">__titleName__</h2>
+                </div>
+            </div>
+            <div class="hourbox">
+                <span class="date">__dia_inicio__</span> <span class="hour">__hora_inicio__</span>
+            </div>
+        </li>
+    </script>
+    </body>
+</html>

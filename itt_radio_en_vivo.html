@@ -1,0 +1,568 @@
+
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Radio en Vivo - Cooperativa.cl</title>
+        <link rel="stylesheet" href="https://janus.cooperativa.cl/cooperativa/css/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="https://janus.cooperativa.cl/cooperativa/css/bootstrap-datetimepicker.min.css">
+        <link type="text/css" href="https://janus.cooperativa.cl/cooperativa/css/bootstrap-timepicker.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://janus.cooperativa.cl/cooperativa/js-local/jquery-ui/jquery-ui.css">
+        <link type="text/css" rel="stylesheet" href="https://janus.cooperativa.cl/cooperativa/css/player.css?1">
+        <link type="text/css" rel="stylesheet" href="https://janus.cooperativa.cl/cooperativa/css/ads.css?2">
+        <link type="text/css" rel="stylesheet" href="https://janus.cooperativa.cl/cooperativa/css/controls.css">
+
+
+        <script src="https://janus.cooperativa.cl/cooperativa/js-local/jquery/jquery.js"></script>
+        <script src="https://janus.cooperativa.cl/cooperativa/js-local/jquery-ui/jquery-ui.js"></script>
+        <script src="https://janus.cooperativa.cl/cooperativa/js-local/html5.js"></script>
+        <!-- <script src="/cooperativa/js-local/Utiles.class.js"></script> -->
+        <script src="//s0.2mdn.net/instream/html5/ima3.js"></script>
+        <script src="https://janus.cooperativa.cl/cooperativa/js-local/prontusPlayerPreRoll/prontusPlayerPreRoll.min.js"></script>
+        <!-- script defer src="https://www.provokers.cl/encuesta/4T2C_STERAMING.js"></script -->
+
+        <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>    
+    
+        <script>  
+            window.googletag = window.googletag || {cmd: []};
+
+
+            googletag.cmd.push(function() {
+                googletag.defineSlot('/1020719/coop_d_990x90_01', [[990, 60], [728, 50], [728, 60], [728, 90], [728, 40], [990, 40], [990, 90], [990, 50]], 'div-gpt-ad-1461944375259-0').addService(googletag.pubads());
+                googletag.defineSlot('/1020719/coop_d_990x90_02', [[990, 60], [728, 50], [728, 60], [728, 90], [728, 40], [990, 40], [990, 90], [990, 50]], 'div-gpt-ad-1461944375259-1').addService(googletag.pubads());
+                googletag.defineSlot('/1020719/coop_d_120x600_01', [[120, 600], [160,600]], 'div-gpt-ad-1450149920562-9').addService(googletag.pubads());
+                googletag.defineSlot('/1020719/coop_d_120x600_02', [[120, 600], [160,600]], 'div-gpt-ad-1450149920562-11').addService(googletag.pubads());
+
+                var itt_tag = googletag.defineSlot('/1020719/coop_d_1x1', [1, 1], 'coop_d_1x1_1').addService(googletag.pubads()).setTargeting('coop_tipo', 'coop_radio_en_vivo');
+                googletag.pubads().enableSingleRequest();
+                googletag.pubads().collapseEmptyDivs();
+                googletag.pubads().enableSyncRendering();
+                googletag.enableServices();
+            });
+        </script>
+
+        <script  src="https://www.cooperativa.cl/noticias/stat/publicidad/includes/js/utiles.listen.class.js?id=20200403165239"></script>
+    </head>
+    <body>
+        <div id='coop_d_1x1_1' class="gam-bloque-itt">
+            <script>
+              googletag.cmd.push(function() { googletag.display('coop_d_1x1_1'); });
+            </script>
+        </div> 
+
+        <div style="display: flex; margin: 0;">
+        <div style="margin: auto;">
+        <!-- /1020719/Coop_D_Radio_online_x35 -->
+        <div class="banner" id='div-gpt-ad-1461944375259-0'>
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461944375259-0'); });
+            </script>
+        </div>
+        </div>
+        </div>
+
+        <div class="radio-content" >
+            <div class="banner banner-lateral pull-left no-margin-left" id='div-gpt-ad-1450149920562-9'>
+                <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450149920562-9'); });
+                </script>
+            </div>
+            <div class="pull-left" >
+                <div id="player" class="Col1">
+                    <!-- PLAYER -->
+
+<div class="boxPlayer">
+    <!-- Titulo -->
+    <div class="titlePlayer">
+        <a href="https://www.cooperativa.cl" target="_blank" class="aleft"><img src="/cooperativa/imag/master/cooperativa_radio_logo.svg" alt="Volver a Cooperativa.cl" title="Volver a Cooperativa.cl" width="194" height="80"></a>
+        <div class="buscador aright">
+            <div class="busq palabra">
+                <label>Búsqueda por palabra</label>
+                <input class="texto" id="searchText"  label="moduleSearchFindText">
+                <input class="boton searchPlayer" id="principalSearchButton" type="submit"  value="">
+            </div>
+
+            <div class="busq tiempo">
+                <label>Búsqueda por fecha y hora</label>
+                <input class="texto fecha " label="moduleSearchFindText" id="datepicker1" placeholder="dd/mm/aaaa">
+                <label><span class="calendarPlayer"></span></label>
+                <input class="boton" type="submit" id = "searchByEpoch" value="Ir">
+            </div>
+        </div>
+    </div>
+    <div class="separa"></div>
+    <div class="auxiPlayer">
+         <div id="JanusPlayerError">Error al iniciar el player, verifique el plugin de Adobe Flash.</div>
+        <div class="titlePlayer">
+        <h1>Escucha Radio Cooperativa</h1>
+    </div>
+        <!-- Cover -->
+        <div class="coverPlayer">
+            <div id="JHSPlayer">
+                <audio id="stream" ></audio>
+            </div>
+            <h3 id="currBand" class="band" style="display: none"></h3>
+            <h4 id="currSong" class="song" style="display: none"></h4>
+             <!-- modifique a mano para forzar la hora modificar para que tenga su propia clase  -->
+            <h2 id="currProgram" class="program" style="display: none;"></h2>
+            <h3 id="curTime" class="curtime" ></h3>
+            <img id="currImg" src="/cooperativa/imag/img_default/default_300x250.jpg" class="cover" width="300" height="250" alt="Radio Cooperativa">
+            <div id="ads" class="ads" >
+                <video id="adsPlayer" class="adsPlayer" playsinline></video>
+                <div id="adContainer"></div>
+                <div id="adInfoContent" class="adInfoContent"><p id="adInfo" class="adInfo"></p></div>
+                <div id="adSkipContainer" class="adSkip">
+                    <p id="adSkipInfo" class="adSkipInfo" align="right"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="progressbarPlayer"><div id="janusProgramBar"></div><div class="tooltipPlayer" >12:59:59</div></div>
+        <div class="dummyControlsPlayer" style="display:none"></div>
+        <!-- Controles -->
+        <div class="controlsPlayer">
+            <a id="janusShare" class="janusButton sharePlayer buttonPlayer" data-description="Compartir momento"></a>
+            <a id="janusFavorite" class="janusButton addfavPlayer buttonPlayer" data-description="Agregar a favoritos"></a>
+            <a id="janusPrev" class="janusButton prevPlayer buttonPlayer" data-description="Programa anterior"></a>
+            <a id="janusPlay" class="janusButton playPlayer buttonPlayer" data-description="Reproducir"></a>
+            <a id="janusLoader" class="janusButton loaderPlayer buttonPlayer" style="display:none" data-description="Cargando"></a>
+            <a id="janusPause" class="janusButton pausePlayer buttonPlayer" style="display:none" data-description="Pause"></a>
+            <a id="janusNext" class="janusButton nextPlayer buttonPlayer" data-description="Siguiente programa"></a>
+            <a id="janusVolMute" class="janusButton volumePlayer buttonPlayer" data-description="Silenciar" ></a>
+            <a id="janusVolUnmute" class="janusButton mutePlayer buttonPlayer" style="display: none"></a>
+            <div id="janusVol" class="volumesliderPlayer"></div>
+            <div class="msgContainer">
+                <a id="janusEnd" style="display:none">Escuchar en vivo</a>
+                <p id="janusHelp" style="display:none"></p>
+            </div>
+        </div>
+        <div class="shareRow">
+            <input type="text" name="Compartir Url" placeholder="Compartir Url" class="inputShare">
+            <span class="fbShare" id="janusFBShare"></span>
+            <span class="twShare" id="janusTWShare"></span>
+            <span class="gpShare" id="janusGPShare"></span>
+            <span class="copyShare"></span>
+            <span class="closeShare"></span>
+        </div>
+    </div>
+    <!-- Tabs -->
+    <div id="tabs" class="tabsPlayer">
+        <ul>
+            <li class="tabPlayer" title="Programación diaria"><a href="#module-programing" class="buttonPlayer"><span class="programsPlayer"></span></a></li>
+            <li class="tabPlayer" title="Momentos destacados"><a href="#module-marks" class="buttonPlayer"><span class="importantPlayer"></span></a><span class="notification animate count" id="markNewCount"><span class="count">1</span></span></li>
+            <li class="tabPlayer" title="Canciones"><a href="#module-songs" subtab="#module-songs" class="buttonPlayer"><span class="playlistPlayer"></span></a></li>
+            <li class="tabPlayer" title="Favoritos"><a href="#module-favorites" class="buttonPlayer"><span class="favoritesPlayer"></span></a></li>
+
+            <li class="tabPlayer" title="Busca por fecha" style="display:none"><a href="#module-calendar" class="buttonPlayer"><span class="calendarPlayer"></span></a></li>
+            <li class="tabPlayer" title="Busca por contenidos" style="display:none"><a href="#module-search" class="buttonPlayer"><span class="searchPlayer"></span></a></li>
+        </ul>
+
+
+        <!-- Módulo: Destacados -->
+        <div class="module" id="module-marks">
+    <!-- Row 1 -->
+    <header class="header">
+        <h2 class="title" label="moduleMarksListTitle">Momentos destacados</h2>
+    </header>
+    <section class="row-common template_list row1">
+        <div class="content">
+            <div id="marksList" class="resize">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+        <!-- FIN Módulo: Destacados -->
+
+        <!-- Módulo: Favoritos -->
+        <div class="module" id="module-favorites">
+    <header class="header" id="favorites">
+        <h2 class="title" label="moduleFavoriteTitle">Mis Favoritos</h2>
+        <div>
+            <div class="area area1 comment-field">
+                <textarea class="textarea" cols="30" rows="5" placeholder="Ingresa tu favorito" id="favText" label="moduleFavoriteText"></textarea>
+            </div>
+           
+            <nav class="area area4 menu favOptions" >
+                <ul>
+                    <li class="button cancel"><a href="#" id="cancelFav"><span class="ico"></span> <span label="cancel">Cancel</span></a></li>
+                    <li class="button ok"><a href="#" id="saveFav"><span class="ico"></span> <span label="save">Guardar</span></a></li>
+                    <span class="separa"></span><!-- separa -->
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    <!-- Row 1 -->
+    <section class="row-common row1 template_list">
+        <div class="content">
+            <div id="favoriteList" class="resize">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- FIN Row 1 -->
+</div>
+        <!-- FIN Módulo: Favoritos -->
+        <!-- Módulo: Ultimas canciones -->
+        <div class="Playlist">    
+<div id="module-songs" class="module songsPlaylist">    
+    <div id="lastSongsDiv" class="songsAuxi">
+        <ul id ="songList"></ul>
+    </div>    
+</div>
+</div>
+        <!-- FIN Módulo: Ultimas canciones -->
+
+        <!-- Módulo: Programación -->
+        <div class="module" id="module-programing">
+    <!-- Row 1 -->
+    <header class="header">
+      <div class="row">
+        <div class="col-md-3"><span class="ico arrow left"></span><a href="" id="getPrevPrograms" class="getProgram"></a></div>
+        <div class="col-md-6"><h1 class="title" id="titleProgDay"></h1></div>
+        <div class="col-md-3"><a href="" id="getNextsPrograms" class="getProgram"></a><span class="ico arrow right"></span></div>
+      </div>
+    </header>
+    <!-- FIN Row 1 -->
+    <!-- Row 2 -->
+    <section class="row-common row2 template_list programmes">
+        <div class="content">
+            <div id="programingList" class="resize">
+                <ul id="programingListUl"> 
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- FIN Row 2 -->
+</div>
+        <!-- FIN Módulo: Programación -->
+
+        <!-- Módulo: Calendario -->
+        <div class="module" id="module-calendar">
+    <!-- Cabecera -->
+    <header class="header" id="calendar">
+        Busca los mejores momentos por fecha 
+    </header>
+    <!-- FIN Cabecera -->
+
+    <!-- Row 1 -->
+    <section class="row-common template_list row1">
+        <div class="content">
+            <div type="text" id="datepicker"></div>
+
+            <div class="time-controls">
+                <div class="time-box"><span id="calendarHour" class="hour">12</span><span>:</span><span id="calendarMinute" class="minutes">00</span></div>
+                <div class="time-slider">
+                    <span>Hora</span> <div id="hourSlider" class="slider"></div>
+                    <div class="separa"></div>
+                    <span>Minuto</span> <div id="minuteSlider" class="slider"></div>
+                </div>
+            </div>
+
+            <div class="button" id="goToCalendarTime"><a href="#">Ir al momento</a></div>
+
+        </div>
+    </section>
+    <!-- FIN Row 1 -->
+</div>
+        <!-- FIN Módulo: Calendario -->
+
+
+    </div>
+</div>
+<div class="coopinfo">
+<span class="coopmsg">También puede escuchar nuestra transmisión usando el reproductor de su preferencia haciendo click aquí: <a href="https://www.cooperativa.cl/noticias/prontus/player_streaming/chile.m3u"><img src="https://janus.cooperativa.cl/cooperativa/imag/iconos/cl.png" /></a> / <a href="https://www.cooperativa.cl/noticias/prontus/player_streaming/usa.m3u"><img src="/cooperativa/imag/iconos/us.png" /></a></span>
+</div>
+<div class="separa"></div>
+<!-- FIN PLAYER -->
+
+                </div>
+
+                <div id="searchPanel" style="display:none">
+                    <!-- Módulo: Buscador -->
+                    
+
+<h2>Resultados de la Búsqueda</h2>
+<div id="closeSearchPanel">
+    <span>X</span>
+</div>
+<div id="moduleSearch" >
+        <!-- <div class="content">
+            
+            <div style="display: none;" id="advancedSettings">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="find_on"  id="on_programs" checked> <span label="moduleSearchAdvSetProgram">Programas</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="find_on" id="on_marks" checked> <span label="moduleSearchAdvSetMarks">Destacados</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="find_on" id="on_favorites" checked> <span label="moduleSearchAdvSetFavorite">Favoritos</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="find_on" id="on_comments" checked> <span label="moduleSearchAdvSetCommet">Comentarios</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" class="find_on" id="on_songs" checked> <span label="moduleSearchAdvSetCommet">Canciones</span>
+                    </label>
+                </div>
+            </div>
+            <div id="result_msg">
+
+            </div>
+        </div> -->
+    <!-- Row 1 -->
+    
+    <section class="row-common row1 template_list">
+        <div class="content">
+            <div id="contentResults" class="resize"></div>
+        </div>
+    </section>
+    <!-- FIN Row 1 -->
+    
+</div>
+                    <!-- FIN Módulo: Buscador -->
+                </div>
+            </div>
+            <div class="banner banner-lateral pull-left no-margin-right" id='div-gpt-ad-1450149920562-11'>
+                <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1450149920562-11'); });
+                </script>
+            </div>
+        </div>
+
+        <!-- *************** MARCA INFERIOR ********************** -->
+        <div style="display: flex; margin: 0;">
+        <div style="margin: auto;">
+        <!-- /1020719/Coop_D_Radio_online_x36 -->
+        <div class="banner" id='div-gpt-ad-1461944375259-1'>
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461944375259-1'); });
+            </script>
+        </div>
+        </div>
+        </div>
+
+        <script type="text/javascript">
+            $("#tabs").tabs();
+            $("#tabs2").tabs();
+        </script>
+        
+
+    <script src="https://janus.cooperativa.cl/cooperativa/js-local/janus/lang/es.js"></script>
+    <script src="https://janus.cooperativa.cl/cooperativa/js-local/md5.js"></script>
+    <script src="https://janus.cooperativa.cl/cooperativa/js-local/jquery/jquery.xdomainrequest.min.js"></script>
+    <script src="https://janus.cooperativa.cl/cooperativa/js-local/jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://janus.cooperativa.cl/cooperativa/js-local/moment.js"></script>
+    <script src="https://janus.cooperativa.cl/cooperativa/js-local/es.js"></script>
+    <script type="text/javascript" src="https://janus.cooperativa.cl/cooperativa/js-local/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://janus.cooperativa.cl/cooperativa/js-local/bootstrap-datetimepicker.min.js"></script>
+
+    <script src='https://janus.cooperativa.cl/cooperativa/js-local/janus/janusConfig.js?v11'></script>
+
+    <script src='https://janus.cooperativa.cl/cooperativa/js-local/janus/janus.min.js?v11'></script>
+
+    <script>
+        $(document).ready(function () {
+            janus.install();
+            function autoplay(){
+                if(janus.player.vars.curPlayer == "flash"){
+                    console.log("1");
+                    var status = janus.player.flash.vars.isReady;
+                    if(status) {
+                        $('#janusPlay').click();
+                    } else {
+                    setTimeout(autoplay,1000);
+                    }
+                }
+            }
+            if(janusConfig.player.autoplay){
+                setTimeout(autoplay,1000);
+            }
+            $( "#datepicker1" ).datetimepicker({
+                pickTime: true,
+                sideBySide: true,
+                changeMonth: true,
+                maxDate: new Date()
+            });
+            $('#datepicker1').data("DateTimePicker").setDate(new Date());
+            $("#searchByEpoch").on('click',function(event){
+                event.preventDefault();
+                janus.player.seekEpoch(janus.helper.dateToOriginalEpoch($('#datepicker1').data("DateTimePicker").getDate()._d));
+            });
+        });
+    </script>
+
+    <script id="janusComment" type="text/template">
+        <li __attr__>
+            <a href="#__epoch_stream__" class="playByEpoch vrow">
+            <article class="article">
+                <div class="info aleft">
+                    <div class="cuerpo">
+                        <div class="user">
+                            <div class="image profile">
+                                <img src="__avatar__" alt="__usuario__" title="__usuario__" width="17" height="17">
+                            </div>
+                            <span class="title">__usuario__</span>
+                        </div>
+                        <p>__comentario__</p>
+                    </div>
+                </div>
+                <span class="separa"></span>
+            </article>
+            </a>
+        </li>
+    </script>
+    <script id="janus_thumb" type="text/template">
+        <article class="thumbnailItem __txt__">
+            <div class="image">
+                <a href="#__epoch__"  class="setEpoch"><img src="__ThumbUrl__" width="110" height="70" ></a>
+            </div>
+            <span class="ico option"><a href="#__epoch__" class="setEpoch"></a></span>
+            <span class="shadow"></span>
+        </article>
+    </script>
+    <script id="janusEpg" type="text/template">
+        <li id="program___id__">
+            <article class="article article-program resultado">
+                <div class="content">
+                    <div class="image screenshot animate-fast pull-left">
+                        <a href="#__lastEpisode__">
+                            <img width="311" height="199" src="__foto_large__" alt="__dia_inicio__-__hora_inicio__" title="__dia_inicio__-__hora_inicio__">
+                        </a>
+                    </div>
+                    <div class="info pull-right">
+                        <div class="user">
+                            <span class="title" title="__title__">__title____live__</span>
+                            <span class="date">__dia_inicio__  __fecha_inicio__-__fecha_fin__</span>
+                        </div>
+                        <div class="cuerpo animate-fast"><p>__resena__</p></div>
+                    </div>
+                    <div class="playcol">
+                        <a class="playByEpoch" href="#__epoch_inicio__">
+                            <span class="playicon"></span>
+                            <p>Escucha</p>
+                        </a>
+                    </div>
+                    <span class="clearfix"></span>
+                </div>
+                <span class="separa"></span>
+            </article>
+        </li>
+    </script>
+    <script id="janus_favorite" type="text/template">
+        <li id="fav___id__">
+            <div class="screenshot">
+                <a class="playByEpoch" href="#__epoch__">
+                    <img src="__img__" alt="album" title="album" width="58" height="58" class="cover-sm">
+                </a>
+            </div>
+            <div class="songcol">
+                <h2 class="songtitle">__title__</h2>
+                <p class="artist">__date__</p>
+            </div>
+            <div class="playcol">
+                <a class="playByEpoch" href="#__epoch__">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+            <span class="delete animate-fast"><a class="deleteFav" href="#__id__">Delete <span class="ico ico-delete"></span></a></span>
+        </li>
+    </script>
+    <script id="janusMark" type="text/template">
+
+
+        <li id="mark___id__">
+            <div class="screenshot">
+                <a class="playByEpoch" href="#__epoch_stream__">
+                    <img src="/cooperativa/imag/img_default/default_300x250.jpg" alt="album" title="album" width="58" height="58" class="cover-sm">
+                </a>
+            </div>
+            <div class="songcol">
+                <h2 class="songtitle">__titulo__</h2>
+                <p class="artist">__hora_inicio__</p>
+            </div>
+            <div class="description">
+                <p >__descripcion__</p>
+            </div>
+           
+            <div class="playcol">
+                <a class="playByEpoch" href="#__epoch_stream__">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+        </li>
+    </script>
+    <script id="janusProgramSearch" type="text/template">
+        <li id="programSearch___id__">
+            <div class="imageSearch">
+                <a href="#__lastEpisode__"  class="playByEpoch vrow setEpoch"><img src="__img__" width="58" height="58" ></a>
+            </div>
+            <div class="songcol">
+                <h1 class="songtitle">__title__</h1>
+                <span class="hour">__hora_inicio__</span>
+                <h2 class="artist">__resena__</h2>
+            </div>
+            <div class="playcol">
+                <a href="#__lastEpisode__" class="playByEpoch vrow">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+        </li>
+    </script>
+    <script id="janusSongSearch" type="text/template">
+        <li id="songSearch___id__" class="song __class__">
+            <div class="imageSearch">
+                <a href="#__startEpoch__"  class="playByEpoch vrow setEpoch"><img src="__img__" width="58" height="58" ></a>
+            </div>
+            <div class="songcol">
+                <h1 class="songtitle">__titleName__</h1>
+                <span class="hour">__hora_inicio__</span>
+                <h2 class="artist">__artistName__</h2>
+            </div>
+            <div class="playcol">
+                <a href="#__startEpoch__" class="playByEpoch vrow">
+                    <span class="playicon"></span>
+                    <p>Escucha</p>
+                </a>
+            </div>
+        </li>
+    </script>
+    <script id="janusSong" type="text/template">
+        <li id="song___id__" class="song __class__">
+            <div>
+                <a class="playByEpoch" href="#__startEpoch__">
+                    <img src="__img__" alt="album" title="album" width="58" height="58" class="cover-sm">
+                </a>
+                <div class = "cancion-info">
+                    <p class="artist">__artistName__</p>
+                    <h2 class="songtitle">__titleName__</h2>
+                </div>
+            </div>
+            <div class="hourbox">
+                <span class="date">__dia_inicio__</span> <span class="hour">__hora_inicio__</span>
+            </div>
+        </li>
+    </script>
+
+    </body>
+</html>
