@@ -1,0 +1,191 @@
+<!-- 300x400 IMAGEN JS -->
+
+<!-- __ι__ι__ι__ι__ι__ TAG DE IMPRESIONES __ι__ι__ι__ι__ι__ -->
+<IMG SRC="________________" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement" style="position:absolute; z-index:-10; top:-999em;">
+    <!-- __ι__ι__ι__ι__ι__ /TAG DE IMPRESIONES __ι__ι__ι__ι__ι__ -->
+
+<style>
+#gam_container_01 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, .9);
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    display: block;
+    position: fixed;
+}
+
+.gam_container_02 {
+    display: flex;
+    margin: 0;
+}
+
+.gam_container_03 {
+    margin: auto;
+}
+
+.gam_container_04 {
+    display: block;
+    height: 29px;
+    width: 300px;
+    line-height: 29px;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: normal !important;
+    color: #fff;
+    background: rgba(66,66,66,1);
+    text-align: center;
+    cursor: pointer;
+    margin: 5px 0 0 0;
+}
+
+.gam_container_04::first-letter {
+    font-size: 31px;
+    line-height: 29px;
+    vertical-align: top;
+}
+
+
+.gam_container_05 {
+    margin: 1px 0 0 0;
+}
+
+.gam_container_06 {
+    z-index: 10;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+}
+
+.gam_container_07 {
+    z-index: 0;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+}
+
+.gam_container_07 img,
+.gam_container_07 iframe {
+    display: block;
+    width: 300px !important;
+    height: 400px !important;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.gam_link_01 {
+    display: block;
+    width: 300px;
+    height: 400px;
+    background: rgba(255,0,0,.0);
+}
+
+.gam_link_01 span {
+    display: none;
+}
+
+.gam_border_01,
+.gam_border_02,
+.gam_border_03,
+.gam_border_04 {
+    position: absolute;
+    background: rgba(133, 133, 133, .35);
+    /* COLOR DEL BORDE DEL ITT*/
+}
+
+.gam_border_01 {
+    width: 1px;
+    height: 400px;
+    z-index: 999999303;
+    margin: 0;
+}
+
+.gam_border_02 {
+    width: 300px;
+    height: 1px;
+    z-index: 999999304;
+    margin: 0;
+}
+
+.gam_border_03 {
+    width: 1px;
+    height: 400px;
+    z-index: 999999305;
+    margin: 0 0 0 calc(300px - 1px);
+}
+
+.gam_border_04 {
+    width: 300px;
+    height: 1px;
+    z-index: 999999306;
+    margin: calc(400px - 1px) 0 0 0;
+}
+
+.gam_display {
+    margin-top: initial !important;
+}
+
+.gam_display_none {
+    margin-top: -999em;
+}
+</style>
+
+<div id='gam_container_01' class="gam_display_none">
+    <div class="gam_container_02">
+        <div class="gam_container_03">
+            <div class="gam_container_04" onclick="gamHideLayer();">⨯ Saltar Anuncio</div>
+            <div class="gam_container_05">
+                <div class="gam_border_01"></div>
+                <div class="gam_border_02"></div>
+                <div class="gam_border_03"></div>
+                <div class="gam_border_04"></div>
+                <div class="gam_container_06">
+                    <a href="%%CLICK_URL_ESC%%%%DEST_URL%%" target="_blank" class="gam_link_01">
+                        <span><img src="%%FILE:JPG1%%" width="300" height="400" alt="">Anuncio publicitario</span>
+                    </a>
+                </div>
+                <div class="gam_container_07">
+                    <img src="%%FILE:JPG1%%" width="1" height="1" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+                document.getElementById("gam_container_01").classList.add("gam_display");
+                document.getElementById("gam_container_01").classList.remove("gam_display_none");
+                let gam_mensaje = {
+                    cmd: 'safe-frame',
+                    tipo: 'gam-bloque-itt',
+                    mensaje: 'itt',
+                    timeOut: 3.3,
+                    params: {
+                        position: 'fixed',
+                        display: 'block',
+                        height: '100vh',
+                        width: '100vw',
+                        top: '0',
+                        left: '0',
+                        zIndex: '999999999'
+                    }
+                };
+                window.top.postMessage(gam_mensaje, '*');
+            })();
+
+setTimeout(function() {gamHideLayer()}, 1000 * 15);
+
+function gamHideLayer() {
+        let gam_mensaje = {
+            cmd: 'safe-frame',
+            tipo: 'gam-bloque-itt',
+            mensaje: 'itt',
+            cerrar: 1
+        };
+        window.top.postMessage(gam_mensaje, '*');
+    }
+</script>

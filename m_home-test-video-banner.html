@@ -96,6 +96,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://www.alairelibre.cl/noticias/css/cooperativa_2018/movil/m_modulo_aal.css">
 <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 <!--MODULO AAL-->
+
+<!--PUBLICIDAD-->
+<link rel="stylesheet" href="\noticias\stat\publicidad\css\css-video-player-ads\video-player-ads\mov_port_home_sticky.css">
+
+<!--/PUBLICIDAD-->
+
 <!--/WIDGET - MARCADORES PORTADA - ALAIRELIBRE.CL -->
 <!--/CSS - LINKS - FONTS -->
 <!-- JS LIBS -->
@@ -233,11 +239,13 @@ let flag;
     googletag.pubads().addEventListener('slotRenderEnded', function (event) {
         console.info("slot renderizados: ",event.slot.getSlotElementId())
     });
-    go('https://pubads.g.doubleclick.net/gampad/ads?iu=/1020719/coop_m_preroll_home_stiky&description_url=http%3A%2F%2Fwww.cooperativa.cl&tfcd=0&npa=0&sz=400x300&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=',[null], [null], [null]); 
+    // go('https://pubads.g.doubleclick.net/gampad/ads?iu=/1020719/coop_m_preroll_home_stiky&description_url=http%3A%2F%2Fwww.cooperativa.cl&tfcd=0&npa=0&sz=400x300&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator=',[null], [null], [null]); 
   });
 </script>
 <!--/PUBLICIDAD PARES CLAVE-VALOR --> 
-<script  src="/noticias/stat/publicidad/includes/js/utiles.listen.class.js?id=20200331225542"></script>
+<!-- <script  src="/noticias/stat/publicidad/includes/js/utiles.listen.class.js?id=20200331225542"></script> -->
+<script src="/noticias/stat/publicidad/codes/utiles/utiles.listen.class.js"></script>
+
 <script type="text/javascript" src="/noticias/js-local/cooperativa_2018/movil/m_menu.js"></script>
 <!-- /JS LIBS -->
 </head>
